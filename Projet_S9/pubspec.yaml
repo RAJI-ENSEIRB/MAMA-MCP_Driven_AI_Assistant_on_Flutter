@@ -1,0 +1,58 @@
+name: MAMA
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path: ^1.9.0
+  mcp_dart: ^1.1.1
+  mcp_server: ^1.0.3
+  http: ^1.2.2
+  google_generative_ai: ^0.4.7
+  path_provider: ^2.0.15
+  shared_preferences: ^2.1.1
+  logging: ^1.1.0
+  provider: ^6.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_dotenv: ^5.1.0
+  googleapis: ^13.1.0
+  googleapis_auth: ^2.0.0 
+  google_sign_in: ^6.2.1
+  cupertino_icons: ^1.0.8
+  speech_to_text: ^7.3.0
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.0
+  hive_generator: 2.0.0
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - .env
+    - lib/mcp_server/tools/repositories/service_account.json
+    - lib/assets/robot.png
+    - lib/assets/mascot_idle.png
+    - lib/assets/mascot_reflect.png
+    - lib/assets/mascot_speak.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#ffffff00"
